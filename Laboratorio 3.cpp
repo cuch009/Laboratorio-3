@@ -1,10 +1,9 @@
-// Directivas de Pre-procesador
-#include <iostream> // Header
+#include <iostream> 
 #include <stdlib.h>
 #include <time.h>
 #include <windows.h>
 #include <math.h>
-using namespace std; // El espacio de nombres standard
+using namespace std; 
 
 void gotoxy(int x, int y) {
     HANDLE hcon;
@@ -15,7 +14,6 @@ void gotoxy(int x, int y) {
     SetConsoleCursorPosition(hcon, dwPos);
 }
 
-// Declaraci髇 de la funci髇 calcularPotencia
 double calcularPotencia(double base, int exponente);
 
 int main() {
@@ -35,7 +33,7 @@ int main() {
 
         switch (opc) {
             case 1: {
-                // C骴igo para la calculadora
+                // C贸digo para la calculadora
                 system("cls");
                 float num1, num2, resultado;
                 char operacion;
@@ -78,7 +76,7 @@ int main() {
                 break;
             }
             case 2: {
-                // C骴igo para calcular potencia
+                //C贸digo para calcular una potencia
                 system("cls");
 
                 float base;
@@ -90,7 +88,6 @@ int main() {
                 cout << "Ingrese el exponente: ";
                 cin >> exponente;
 
-                // Llamada a la funci髇 y muestra del resultado
                 double resultado = calcularPotencia(base, exponente);
 
                 cout << "Resultado: " << resultado << endl;
@@ -99,7 +96,7 @@ int main() {
                 break;
             }
             case 3: {
-                // C骴igo para determinar si un n鷐ero es primo o no
+                // C贸digo para determinar si un n煤mero es primo o no
                 system("cls");
                 cout << "\t\t\tIdentificador de numeros primos" << endl;
                 int numero;
@@ -128,7 +125,7 @@ int main() {
                 }
             }
             case 4: {
-                // C骴igo para determinar si un a駉 es bisiesto o no
+                // C贸digo para determinar si un a帽o es bisiesto o no
                 system("cls");
 
                 int anio;
